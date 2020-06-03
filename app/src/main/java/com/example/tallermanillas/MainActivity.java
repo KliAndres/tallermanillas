@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import static java.lang.Double.doubleToRawLongBits;
 import static java.lang.Double.parseDouble;
 
 public class MainActivity extends AppCompatActivity {
@@ -198,5 +199,23 @@ public class MainActivity extends AppCompatActivity {
         valorPagar.setText("" + pag);
     }
 
+public boolean validar(){
+        String error_cantidadcero, errorcantidadv;
+
+        error_cantidadcero=getResources().getString(R.string.error_cantidadcero);
+        errorcantidadv=getResources().getString(R.string.error_cantidadv);
+
+        if(cantidad.getText().toString().isEmpty()){
+            cantidad.setError(errorcantidadv);
+            cantidad.requestFocus();
+            return false;
+        }
+        if (Double.parseDouble(cantidad.getText().toString())==0){
+            cantidad.setError(error_cantidadcero);
+            cantidad.requestFocus();
+            return false;
+        }
+        return true;
+}
 
 }
