@@ -3,4 +3,35 @@
     <string name="titulo">Compra Manillas</string>
     <string name="cantidad">Cantidad</string>
     <string name="comprar">Comprar</string>
+    <string name="opcion_cuero">Cuero</string>
+    <string name="opcion_cuerda">Cuerda</string>
+    <string name="opcion_martillo">Martillo</string>
+    <string name="opcion_ancla">Ancla</string>
+    <string name="opcion_oro">Oro, Oro Rosado</string>
+    <string name="opcion_plata">Plata</string>
+    <string name="opcion_niquel">Niquel</string>
+    <string name="opcion_dolar">Dolar</string>
+    <string name="opcion_peso">Peso Colombiano</string>
+
+    <string-array name="materiales">
+        <item>@string/opcion_cuero</item>
+        <item>@string/opcion_cuerda</item>
+    </string-array>
+
+    <string-array name="dije">
+        <item>@string/opcion_martillo</item>
+        <item>@string/opcion_ancla</item>
+    </string-array>
+
+    <string-array name="tipo">
+        <item>@string/opcion_oro</item>
+        <item>@string/opcion_plata</item>
+        <item>@string/opcion_niquel</item>
+    </string-array>
+
+    <string-array name="moneda">
+        <item>@string/opcion_dolar</item>
+        <item>@string/opcion_peso</item>
+    </string-array>
+
 </resources>
