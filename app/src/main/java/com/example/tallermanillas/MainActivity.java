@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void calcularPago(View v){
-        int mat, dij, tip, mon;
-        double can, valuni, pag=0;
+        int mat, dij, tip, mon, valuni;
+        double can, pag=0;
         can= parseDouble(cantidad.getText().toString());
         mat=combo_Materiales.getSelectedItemPosition();
         dij=combo_Dije.getSelectedItemPosition();
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                                         pag=valuni*can;
                                         break;
                                     case 1:
-                                        pag=(valuni*can)*3200;
+                                        pag=(valuni *can)*3200;
                                         break;
                                 }break;
                             case 1:
