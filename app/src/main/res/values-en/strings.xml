@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TallerManillas</string>
+    <string name="titulo">Manillas Shop</string>
+    <string name="cantidad">How many do you want?</string>
+    <string name="comprar">Buy!</string>
+    <string name="opcion_cuero">Leather</string>
+    <string name="opcion_cuerda">Rope</string>
+    <string name="opcion_martillo">Hammer</string>
+    <string name="opcion_ancla">Anchor</string>
+    <string name="opcion_oro">Gold, Pink Gold</string>
+    <string name="opcion_plata">Silver</string>
+    <string name="opcion_niquel">Nickel</string>
+    <string name="opcion_dolar">Dollar</string>
+    <string name="opcion_peso">COP</string>
+    <string name="error_cantidadcero">Check the quantity, It can\'t be 0</string>
+    <string name="error_cantidadv">Remember, I must to write how many do you want.</string>
+</resources>

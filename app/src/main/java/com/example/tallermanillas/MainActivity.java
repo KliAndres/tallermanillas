@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
     public void calcularPago(View v){
         int mat, dij, tip, mon, valuni;
         double can, pag=0;
+
+        if(validar()){
         can= parseDouble(cantidad.getText().toString());
         mat=combo_Materiales.getSelectedItemPosition();
         dij=combo_Dije.getSelectedItemPosition();
@@ -198,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
         }
         valorPagar.setText("" + pag);
     }
-
+    }
 public boolean validar(){
         String error_cantidadcero, errorcantidadv;
 
@@ -209,8 +211,7 @@ public boolean validar(){
             cantidad.setError(errorcantidadv);
             cantidad.requestFocus();
             return false;
-        }
-        if (Double.parseDouble(cantidad.getText().toString())==0){
+        }else if (Double.parseDouble(cantidad.getText().toString())==0){
             cantidad.setError(error_cantidadcero);
             cantidad.requestFocus();
             return false;
