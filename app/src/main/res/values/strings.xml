@@ -36,4 +36,5 @@
 
     <string name="error_cantidadcero">Revise la cantida no puede ser 0</string>
     <string name="error_cantidadv">Recuerde, debe escribir una cantidad</string>
+    <string name="entrar">Entrar!</string>
 </resources>
